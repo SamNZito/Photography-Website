@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pete Zito | Portfolio | Home</title>
+<link href="style4.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay" style="background-image:url('img/photos/nature/crane.jpg');"> 
+  <div class="wrapper">
+    <header id="header" class="hoc clear">
+      <div id="logo"> 
+        <h1>Portfolio</h1>
+        <p>Pete Zito</p>
+      </div>
+      <nav id="mainav" class="clear"> 
+        <ul class="clear">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="drop" href="#gallery">Gallery</a>
+            <ul>
+              <li><a href="pages/nature.html">Nature</a></li>
+              <li><a href="pages/animals.html">Wildlife</a></li>
+              <li><a href="pages/urban.html">Urban</a></li>
+              <li><a href="pages/professional.html">Professional</a></li>
+            </ul>
+          </li>
+          <li><a class="drop" href="videos.html">Videos</a>
+            <ul>
+              <li><a href="videos.html#2023">2023 Videos</a></li>
+              <li><a href="videos.html#2022">2022 Videos</a></li>
+              <li><a href="videos.html#2021">2021 Videos</a></li>
+              <li><a href="videos.html#promotional">Promotional</a></li>
+              <li><a href="videos.html#quarter">Quarterly Video</a></li>
+            </ul>
+          </li>
+          <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+<!--  ########################################################################################################## -->
+<!-- resized dropdown navbar dynamic thx chatgpt -->
+        <form id="navForm" action="#">
+  <select>
+    <option selected="selected" value="">MENU</option>
+  </select>
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $("#mainav a").each(function() {
+      var link = $(this);
+      var optionText = "";
+
+      if (link.parents("ul ul ul").length >= 1) {
+        optionText = "- - - " + link.text();
+      } else if (link.parents("ul ul").length >= 1) {
+        optionText = "- - " + link.text();
+      } else if (link.parents("ul").length >= 1) {
+        optionText = "" + link.text();
+      }
+
+      $("<option />", {
+        value: link.attr("href"),
+        text: optionText
+      }).appendTo("#navForm select");
+    });
+
+    $("#navForm select").change(function() {
+      var selectedOption = $(this).find("option:selected");
+      if (selectedOption.val() !== "#") {
+        window.location = selectedOption.val();
+      }
+    });
+  });
+</script>
+      </nav>
+    </header>
+  </div>
+  <div id="pageintro" class="hoc clear"> 
+    <article><em>Capture the Moment</em>
+      <h2 class="heading">Preserving Memories, Crafting Experiences</h2>
+      <p>Peter Zito Photography Portfolio</p>
+      <footer><a class="btn" href="pages/contact.html">Contact</a></footer>
+    </article>
+    <!-- ################################################################################################ -->
+  </div>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Top Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div id="gallery" class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <ul class="nospace clear services">
+      <li class="one_half first borderedbox">
+        <div class="inspace-30">
+          <h6 class="heading">Mission</h6>
+          <p class="nospace">As a skilled multimedia creator and videographer, I specialize in crafting visually stunning and engaging content that makes executives, leaders, brands, and companies look their best. Whether it's recording interviews, creating promotional videos, or producing Zoom meetings, I have the expertise to handle all the details and deliver top-notch results, saving busy professionals valuable time and reducing stress.</p>
+        </div>
+      </li>
+      <li class="one_quarter"><a href="pages/nature.html">
+        <figure><img src="img/photos/nature/whiteFlower.jpg" alt="white flowers">
+          <figcaption class="cap" style="display: block; text-align: center;">Nature</figcaption>
+        </figure>
+        </a></li>
+      <li class="one_quarter"><a href="pages/animals.html">
+        <figure><img src="img/photos/animals/babyduck.JPG" alt="yellow baby duck">
+          <figcaption class="cap" style="display: block; text-align: center;">Wildlife</figcaption>
+        </figure>
+        </a></li>
+      <li class="one_quarter first"><a href="pages/urban.html">
+        <figure><img src="img/photos/urban/wall.JPEG" alt="street wall">
+          <figcaption class="cap" style="display: block; text-align: center;">Urban</figcaption>
+        </figure>
+        </a></li>
+      <li class="one_quarter"><a href="pages/professional.html">
+        <figure><img src="img/photos/professional/ropeSwing.jpg" alt="kid on rope swing">
+          <figcaption class="cap" style="display: block; text-align: center;">Professional</figcaption>
+        </figure>
+        </a></li>
+      <li class="two_quarter"><a href="pages/videos.html">
+        <figure><img src="img/photos/professional/pool.jpg" alt="kids in a pool">
+          <figcaption class="cap" style="display: block; text-align: center;">Videos</figcaption>
+        </figure>
+        </a></li>
+    </ul>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="bgded overlay" style="background-position: center; background-image:url('img/photos/animals/crane6.JPG');">
+  <footer id="footer" class="hoc clear center"> 
+    <!-- ################################################################################################ -->
+    <h3 class="heading uppercase">Pete Zito</h3>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="social-icons">
+  <a href="https://www.linkedin.com/in/peter-zito/" target="blank" class="icon"><i class="fa fa-linkedin"></i></a>
+  <a href="https://sites.google.com/view/peterzitoportfolio/home" target="blank" class="icon"><i class="fa fa-google"></i></a>
+</div>
+    
+
+<!-- ################################################################################################ -->
+  </footer>
+  <!-- ################################################################################################ -->
+  <div id="copyright" class="hoc clear center"> 
+    <!-- ################################################################################################ -->
+    <p>Copyright &copy; 2024 </p>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+</body>
+
+<script>
+const d = new Date();
+let year = d.getFullYear();
+document.getElementById("copyright").innerHTML = "Copyright &copy;" + year;
+</script>
+
+</html>
