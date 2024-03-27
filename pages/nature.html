@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pete Zito | Gallery | Nature</title>
+<link href="../style4.css" rel="stylesheet" type="text/css" media="all">
+<style>
+#myBtn {
+   margin: 0 0% 2% 47%;
+   text-align: center;
+}
+</style>
+
+</head>
+<body id="top">
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay" style="background-image:url('../img/photos/nature/wideSunset.jpg');"> 
+  <div class="wrapper">
+    <header id="header" class="hoc clear">
+      <div id="logo"> 
+        <h1><a href="../index.html">Capturing the Beauty of the Natural World</a></h1>
+        <p>Pete Zito</p>
+      </div>
+      <nav id="mainav" class="clear">
+        <ul class="clear">
+          <li><a href="../index.html">Home</a></li>
+          <li><a class="drop" href="../index.html#gallery">Gallery</a>
+            <ul>
+              <li><a href="nature.html">Nature</a></li>
+              <li><a href="animals.html">Wildlife</a></li>
+              <li><a href="urban.html">Urban</a></li>
+              <li><a href="professional.html">Professional</a></li>
+            </ul>
+          </li>
+          <li><a class="drop" href="videos.html">Videos</a>
+            <ul>
+              <li><a href="videos.html#2023">2023 Videos</a></li>
+              <li><a href="videos.html#2022">2022 Videos</a></li>
+              <li><a href="videos.html#2021">2021 Videos</a></li>
+              <li><a href="videos.html#promotional">Promotional</a></li>
+              <li><a href="videos.html#quarter">Quarterly Video</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <!--  ########################################################################################################## -->
+<!-- resized dropdown navbar dynamic thx chatgpt -->
+        <form id="navForm" action="#">
+  <select>
+    <option selected="selected" value="">MENU</option>
+  </select>
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $("#mainav a").each(function() {
+      var link = $(this);
+      var optionText = "";
+
+      if (link.parents("ul ul ul").length >= 1) {
+        optionText = "- - - " + link.text();
+      } else if (link.parents("ul ul").length >= 1) {
+        optionText = "- - " + link.text();
+      } else if (link.parents("ul").length >= 1) {
+        optionText = "" + link.text();
+      }
+
+      $("<option />", {
+        value: link.attr("href"),
+        text: optionText
+      }).appendTo("#navForm select");
+    });
+
+    $("#navForm select").change(function() {
+      var selectedOption = $(this).find("option:selected");
+      if (selectedOption.val() !== "#") {
+        window.location = selectedOption.val();
+      }
+    });
+  });
+</script>
+      </nav>
+    </header>
+  </div>
+</div>
+<!-- End Top Background Image Wrapper -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <div class="content"> 
+      <div id="gallery">
+        <figure>
+          <header class="heading">Nature</header>
+          <ul class="nospace clear">
+            <li class="two_third first"><a href="../img/photos/nature/lake.jpg" target="_blank"><img src="../img/photos/nature/lake.jpg" alt="lake picture"></a></li>
+            <li class="one_third"><a href="../img/photos/nature/branch.jpg" target="_blank"><img src="../img/photos/nature/branch.jpg" alt="branch"></a></li>
+            <li class="one_third first"><a href="../img/photos/nature/sunset.jpg" target="_blank"><img src="../img/photos/nature/sunset.jpg" alt="sunset"></a></li>
+            <li class="two_third"><a href="../img/photos/nature/sunLake.jpg" target="_blank"><img src="../img/photos/nature/sunLake.jpg" alt="sun over lake"></a></li>
+            <li class="two_third first"><a href="../img/photos/nature/beachmont.JPEG" target="_blank"><img src="../img/photos/nature/beachmont.JPEG" alt="beachmont camp ground"></a></li>
+            <li class="one_quarter"><a href="../img/photos/nature/oceanSunrise.JPEG" target="_blank"><img src="../img/photos/nature/oceanSunrise.JPEG" alt="ocean sunrise"></a></li>
+            <li class="one_quarter"><a href="../img/photos/nature/dam.JPEG" target="_blank"><img src="../img/photos/nature/dam.JPEG" alt="dam"></a></li>
+            <li class="four_quarter"><a href="../img/photos/nature/crane.jpg" target="_blank"><img src="../img/photos/nature/crane.jpg" alt="crane"></a></li>
+            <li class="one_half first"><a href="../img/photos/nature/whiteFlower.jpg" target="_blank"><img src="../img/photos/nature/whiteFlower.jpg" alt="white flower"></a></li>
+            <li class="one_half"><a href="../img/photos/nature/purpleFlower.JPEG" target="_blank"><img src="../img/photos/nature/purpleFlower.JPEG" alt="purple flower"></a></li>
+            <li class="one_third first"><a href="../img/photos/nature/redFlower.JPEG" target="_blank"><img src="../img/photos/nature/redFlower.JPEG" alt="red flwoer"></a></li>
+            <li class="one_third"><a href="../img/photos/nature/oceanSunset.jpg" target="_blank"><img src="../img/photos/nature/oceanSunset.jpg" alt="ocean sunset"></a></li>
+            <li class="one_third"><a href="../img/photos/nature/shootingStar.JPEG" target="_blank"><img src="../img/photos/nature/shootingStar.JPEG" alt="shooting star"></a></li>
+            <li class="four_quarter first"><a href="../img/photos/nature/sunClouds.JPG" target="_blank"><img src="../img/photos/nature/sunClouds.JPG" alt="sun with clouds"></a></li>
+            <li class="one_half first"><a href="../img/photos/nature/sunrise.JPEG" target="_blank"><img src="../img/photos/nature/sunrise.JPEG" alt="sun rise"></a></li>
+            <li class="one_half"><a href="../img/photos/nature/stickDam.JPEG" target="_blank"><img src="../img/photos/nature/stickDam.JPEG" alt="stick in dam"></a></li>
+            <li class="one_half first"><a href="../img/photos/nature/tallGrass.JPEG" target="_blank"><img src="../img/photos/nature/tallGrass.JPEG" alt="tall grass"></a></li>
+            <li class="one_half"><a href="../img/photos/nature/woodGrain.JPEG" target="_blank"><img src="../img/photos/nature/woodGrain.JPEG" alt="wood"></a></li>
+            <li class="two_third first"><a href="../img/photos/nature/blueFlower.jpg" target="_blank"><img src="../img/photos/nature/blueFlower.jpg" alt="blue flower"></a></li>
+            <li class="one_third"><a href="../img/photos/nature/waterfall" target="_blank"><img src="../img/photos/nature/waterfall" alt="water fall"></a></li>
+          </ul>
+
+        <button onclick="topFunction()"class="btn" id="myBtn" title="Go to top">Top</button>
+
+        <figcaption>The Northeast's Natural Beauty: A Photographic Journey<br>
+
+Explore the beauty of rural areas in the Northeast through our collection of nature and landscape photos. From wildflowers to sunsets, each photo captures the unique textures, patterns, and colors of this region. Take a journey through the Northeast's natural landscapes and discover the wonder and magic of the great outdoors.</figcaption>
+        </figure>
+
+      </div>
+    </div>
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="bgded overlay" style="background-position: bottom center; background-image:url('../img/photos/nature/wideSunset.jpg');">
+  <footer id="footer" class="hoc clear center"> 
+    <h3 class="heading uppercase">Peter Zito</h3>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="social-icons">
+  <a href="https://www.linkedin.com/in/peter-zito/" target="blank" class="icon"><i class="fa fa-linkedin"></i></a>
+  <a href="https://sites.google.com/view/peterzitoportfolio/home" target="blank" class="icon"><i class="fa fa-google"></i></a>
+
+  </footer>
+  <div id="copyright" class="hoc clear center"> 
+    <p>Copyright &copy; 2024 <a href="#"></a></p>
+  </div>
+</div>
+<!-- ################################################################################################ -->
+</body>
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<script>
+const d = new Date();
+let year = d.getFullYear();
+document.getElementById("copyright").innerHTML = "Copyright &copy;" + year;
+</script>
+
+</html>
+

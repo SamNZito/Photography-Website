@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pete Zito | Gallery | Professional</title>
+<link href="../style4.css" rel="stylesheet" type="text/css" media="all">
+<style>
+#myBtn {
+   margin: 0 0% 2% 47%;
+   text-align: center;
+}
+</style>
+
+</head>
+<body id="top">
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay" style="background-position: center; background-image:url('../img/photos/professional/pool.jpg');"> 
+  <div class="wrapper">
+    <header id="header" class="hoc clear">
+      <div id="logo"> 
+        <h1><a href="../index.html">Summer Adventures: Day Camp Memories in Photos</a></h1>
+        <p>Pete Zito</p>
+      </div>
+      <nav id="mainav" class="clear">
+        <ul class="clear">
+          <li><a href="../index.html">Home</a></li>
+          <li><a class="drop" href="../index.html#gallery">Gallery</a>
+            <ul>
+              <li><a href="nature.html">Nature</a></li>
+              <li><a href="animals.html">Wildlife</a></li>
+              <li><a href="urban.html">Urban</a></li>
+              <li><a href="professional.html">Professional</a></li>
+            </ul>
+          </li>
+          <li><a class="drop" href="videos.html">Videos</a>
+            <ul>
+              <li><a href="videos.html#2023">2023 Videos</a></li>
+              <li><a href="videos.html#2022">2022 Videos</a></li>
+              <li><a href="videos.html#2021">2021 Videos</a></li>
+              <li><a href="videos.html#promotional">Promotional</a></li>
+              <li><a href="videos.html#quarter">Quarterly Video</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <!--  ########################################################################################################## -->
+<!-- resized dropdown navbar dynamic thx chatgpt -->
+        <form id="navForm" action="#">
+  <select>
+    <option selected="selected" value="">MENU</option>
+  </select>
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $("#mainav a").each(function() {
+      var link = $(this);
+      var optionText = "";
+
+      if (link.parents("ul ul ul").length >= 1) {
+        optionText = "- - - " + link.text();
+      } else if (link.parents("ul ul").length >= 1) {
+        optionText = "- - " + link.text();
+      } else if (link.parents("ul").length >= 1) {
+        optionText = "" + link.text();
+      }
+
+      $("<option />", {
+        value: link.attr("href"),
+        text: optionText
+      }).appendTo("#navForm select");
+    });
+
+    $("#navForm select").change(function() {
+      var selectedOption = $(this).find("option:selected");
+      if (selectedOption.val() !== "#") {
+        window.location = selectedOption.val();
+      }
+    });
+  });
+</script>
+      </nav>
+    </header>
+  </div>
+</div>
+<!-- End Top Background Image Wrapper -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <div class="content"> 
+      <div id="gallery">
+        <figure>
+          <header class="heading">Beachmont Day Camp</header>
+          <ul class="nospace clear">
+            <li class="one_half first"><a href="../img/photos/professional/bow.jpg" target="_blank"><img src="../img/photos/professional/bow.jpg" alt="kid using bow"></a></li>
+            <li class="one_half"><a href="../img/photos/professional/target.jpg" target="_blank"><img src="../img/photos/professional/target.jpg" alt="bow and target"></a></li>
+            <li class="four_quarter first"><a href="../img/photos/professional/kickBall.jpg" target="_blank"><img src="../img/photos/professional/kickBall.jpg" alt="kickball game"></a></li>
+            <li class="one_third first"><a href="../img/photos/professional/ladder.jpg" target="_blank"><img src="../img/photos/professional/ladder.jpg" alt="climbing ladder"></a></li>
+            <li class="one_third"><a href="../img/photos/professional/ropeSwing.jpg" target="_blank"><img src="../img/photos/professional/ropeSwing.jpg" alt="rope swing"></a></li>
+            <li class="one_third"><a href="../img/photos/professional/stream.jpg" target="_blank"><img src="../img/photos/professional/stream.jpg" alt="stream playing"></a></li>
+            <li class="one_half first"><a href="../img/photos/professional/waterSlide.jpg" target="_blank"><img src="../img/photos/professional/waterSlide.jpg" alt="kid on water slide"></a></li>
+            <li class="one_half"><a href="../img/photos/professional/waterSlide.2.jpg" target="_blank"><img src="../img/photos/professional/waterSlide.2.jpg" alt="water slide"></a></li>
+            <li class="four_quarter first"><a href="../img/photos/professional/pool.jpg" target="_blank"><img src="../img/photos/professional/pool.jpg" alt="kids in pool"></a></li>
+            <li class="two_third first"><a href="../img/photos/professional/soccer.jpg" target="_blank"><img src="../img/photos/professional/soccer.jpg" alt="playing soccer"></a></li>
+            <li class="one_third"><a href="../img/photos/professional/balance.jpg" target="_blank"><img src="../img/photos/professional/balance.jpg" alt="balancing kid"></a></li>
+            <li class="one_half first"><a href="../img/photos/professional/talk.jpg" target="_blank"><img src="../img/photos/professional/talk.jpg" alt="guy talking"></a></li>
+            <li class="one_half"><a href="../img/photos/professional/listen.jpg" target="_blank"><img src="../img/photos/professional/listen.jpg" alt="people listening"></a></li>
+          </ul>
+
+        <button onclick="topFunction()"class="btn" id="myBtn" title="Go to top">Top</button>
+
+        <figcaption>Summer Fun at Day Camp: Archery, Swimming, Waterslide, and Sports<br>
+           Dive into a world of adventure and excitement captured in our day camp photos. Experience the thrill of archery as campers take aim and unleash their inner Robin Hood. Feel the splash of cool water as laughter echoes around the swimming pool, where friendships are forged and memories made. Glide down the exhilarating waterslide, feeling the rush of adrenaline with every twist and turn. Get caught up in the action-packed excitement of sports, where teamwork and skill collide on the field. Join us on this journey of summer fun, where every moment is filled with joy and endless possibilities.
+
+        </figcaption>
+        </figure>
+
+      </div>
+    </div>
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="bgded overlay" style="background-position:  center; background-image:url('../img/photos/professional/kickBall.jpg');">
+  <footer id="footer" class="hoc clear center"> 
+    <h3 class="heading uppercase">Peter Zito</h3>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="social-icons">
+  <a href="https://www.linkedin.com/in/peter-zito/" target="blank" class="icon"><i class="fa fa-linkedin"></i></a>
+  <a href="https://sites.google.com/view/peterzitoportfolio/home" target="blank" class="icon"><i class="fa fa-google"></i></a>
+
+  </footer>
+  <div id="copyright" class="hoc clear center"> 
+    <p>Copyright &copy; 2024 <a href="#"></a></p>
+  </div>
+</div>
+<!-- ################################################################################################ -->
+</body>
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<script>
+const d = new Date();
+let year = d.getFullYear();
+document.getElementById("copyright").innerHTML = "Copyright &copy;" + year;
+</script>
+
+</html>
+

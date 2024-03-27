@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pete Zito | Gallery | Wildlife</title>
+<link href="../style4.css" rel="stylesheet" type="text/css" media="all">
+<style>
+#myBtn {
+   margin: 0 0% 2% 47%;
+   text-align: center;
+}
+</style>
+
+</head>
+<body id="top">
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay" style="background-position: center; background-image:url('../img/photos/animals/bird2.JPG');"> 
+  <div class="wrapper">
+    <header id="header" class="hoc clear">
+      <div id="logo"> 
+        <h1><a href="#wildlife">Capturing the Beauty of the Natural World</a></h1>
+        <p>Pete Zito</p>
+      </div>
+      <nav id="mainav" class="clear">
+        <ul class="clear">
+          <li><a href="../index.html">Home</a></li>
+          <li><a class="drop" href="../index.html#gallery">Gallery</a>
+            <ul>
+              <li><a href="nature.html">Nature</a></li>
+              <li><a href="animals.html">Wildlife</a></li>
+              <li><a href="urban.html">Urban</a></li>
+              <li><a href="professional.html">Professional</a></li>
+            </ul>
+          </li>
+          <li><a class="drop" href="videos.html">Videos</a>
+            <ul>
+              <li><a href="videos.html#2023">2023 Videos</a></li>
+              <li><a href="videos.html#2022">2022 Videos</a></li>
+              <li><a href="videos.html#2021">2021 Videos</a></li>
+              <li><a href="videos.html#promotional">Promotional</a></li>
+              <li><a href="videos.html#quarter">Quarterly Video</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <!--  ########################################################################################################## -->
+<!-- resized dropdown navbar dynamic thx chatgpt -->
+        <form id="navForm" action="#">
+  <select>
+    <option selected="selected" value="">MENU</option>
+  </select>
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $("#mainav a").each(function() {
+      var link = $(this);
+      var optionText = "";
+
+      if (link.parents("ul ul ul").length >= 1) {
+        optionText = "- - - " + link.text();
+      } else if (link.parents("ul ul").length >= 1) {
+        optionText = "- - " + link.text();
+      } else if (link.parents("ul").length >= 1) {
+        optionText = "" + link.text();
+      }
+
+      $("<option />", {
+        value: link.attr("href"),
+        text: optionText
+      }).appendTo("#navForm select");
+    });
+
+    $("#navForm select").change(function() {
+      var selectedOption = $(this).find("option:selected");
+      if (selectedOption.val() !== "#") {
+        window.location = selectedOption.val();
+      }
+    });
+  });
+</script>
+      </nav>
+    </header>
+  </div>
+</div>
+<!-- End Top Background Image Wrapper -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <div class="content"> 
+      <div id="gallery">
+        <figure>
+          <header class="heading" id="wildlife">Wildlife</header>
+          <ul class="nospace clear">
+            <li class="one_half first"><a href="../img/photos/animals/babyduck.JPG" target="_blank"><img src="../img/photos/animals/babyduck.JPG" alt="baby duck"></a></li>
+            <li class="one_half"><a href="../img/photos/animals/bbduck1.jpg" target="_blank"><img src="../img/photos/animals/bbduck1.jpg" alt="baby duck"></a></li>
+            <li class="one_third first"><a href="../img/photos/animals/bbduck2.jpg" target="_blank"><img src="../img/photos/animals/bbduck2.jpg" alt="baby duck"></a></li>
+            <li class="one_third"><a href="../img/photos/animals/bbduck3.jpg" target="_blank"><img src="../img/photos/animals/bbduck3.jpg" alt="baby duck"></a></li>
+            <li class="one_third"><a href="../img/photos/animals/bbduck4.jpg" target="_blank"><img src="../img/photos/animals/bbduck4.jpg" alt="baby duck"></a></li>
+            <li class="one_third first"><a href="../img/photos/animals/bbduck5.jpg" target="_blank"><img src="../img/photos/animals/bbduck5.jpg" alt="baby duck"></a></li>
+            <li class="one_third"><a href="../img/photos/animals/bbduck6.jpg" target="_blank"><img src="../img/photos/animals/bbduck6.jpg" alt="baby duck"></a></li>
+            <li class="one_third"><a href="../img/photos/animals/bbduck8.jpg" target="_blank"><img src="../img/photos/animals/bbduck8.jpg" alt="baby duck"></a></li>
+            <li class="one_half first"><a href="../img/photos/animals/bbduck7.jpg" target="_blank"><img src="../img/photos/animals/bbduck7.jpg" alt="baby duck"></a></li>
+            <li class="one_half"><a href="../img/photos/animals/1leg.jpg" target="_blank"><img src="../img/photos/animals/1leg.jpg" alt="duck standing on one leg"></a></li>
+            <li class="one_half first"><a href="../img/photos/animals/beak.jpg" target="_blank"><img src="../img/photos/animals/beak.jpg" alt="duck beak"></a></li>
+            <li class="one_half"><a href="../img/photos/animals/blackduck.jpg" target="_blank"><img src="../img/photos/animals/blackduck.jpg" alt="black duck"></a></li>
+            <li class="one_half first"><a href="../img/photos/animals/breadduck.jpg" target="_blank"><img src="../img/photos/animals/breadduck.jpg" alt=" duck eating bread"></a></li>
+            <li class="one_half"><a href="../img/photos/animals/duckfamily.JPG" target="_blank"><img src="../img/photos/animals/duckfamily.JPG" alt="family of ducks"></a></li>
+            <li class="four_quarter first"><a href="../img/photos/animals/deer.jpg" target="_blank"><img src="../img/photos/animals/deer.jpg" alt="deer in woods"></a></li>
+            <li class="one_third first"><a href="../img/photos/animals/bird.JPG" target="_blank"><img src="../img/photos/animals/bird.JPG" alt=" bird flying"></a></li>
+            <li class="one_third"><a href="../img/photos/animals/bird2.JPEG" target="_blank"><img src="../img/photos/animals/bird2.JPEG" alt="bird flying"></a></li>
+            <li class="one_third"><a href="../img/photos/animals/bird3.JPG" target="_blank"><img src="../img/photos/animals/bird3.JPG" alt="bird flying"></a></li>
+            <li class="four_quarter first"><a href="../img/photos/animals/bird2.JPG" target="_blank"><img src="../img/photos/animals/bird2.JPG" alt="bird flying"></a></li>
+            <li class="one_half first"><a href="../img/photos/animals/butterfly.jpg" target="_blank"><img src="../img/photos/animals/butterfly.jpg" alt="butter fly on flower"></a></li>
+            <li class="one_half"><a href="../img/photos/animals/crane.jpg" target="_blank"><img src="../img/photos/animals/crane.jpg" alt="crane sitting"></a></li>
+            <li class="four_quarter first"><a href="../img/photos/animals/crane2.JPG" target="_blank"><img src="../img/photos/animals/crane2.JPG" alt="crane"></a></li>
+            <li class="one_third first"><a href="../img/photos/animals/crane3.jpg" target="_blank"><img src="../img/photos/animals/crane3.jpg" alt="crane"></a></li>
+            <li class="two_third"><a href="../img/photos/animals/crane4.jpg" target="_blank"><img src="../img/photos/animals/crane4.jpg" alt="crane"></a></li>
+            <li class="one_half first"><a href="../img/photos/animals/crane5.JPG" target="_blank"><img src="../img/photos/animals/crane5.JPG" alt="crane"></a></li>
+            <li class="one_half"><a href="../img/photos/animals/crane6.JPG" target="_blank"><img src="../img/photos/animals/crane6.JPG" alt="crane"></a></li>
+            <li class="one_third first"><a href="../img/photos/animals/cross.jpg" target="_blank"><img src="../img/photos/animals/cross.jpg" alt="goose on road"></a></li>
+            <li class="one_third"><a href="../img/photos/animals/eagle.JPG" target="_blank"><img src="../img/photos/animals/eagle.JPG" alt="eagle sitting"></a></li>
+            <li class="one_third"><a href="../img/photos/animals/whiteduck.jpg" target="_blank"><img src="../img/photos/animals/whiteduck.jpg" alt="white duck"></a></li>
+            <li class="four_quarter first"><a href="../img/photos/animals/whitebird.jpg" target="_blank"><img src="../img/photos/animals/whitebird.JPG" alt="white bird"></a></li>
+            <li class="one_third first"><a href="../img/photos/animals/fly1.JPG" target="_blank"><img src="../img/photos/animals/fly1.JPG" alt="bird flying"></a></li>
+            <li class="one_third"><a href="../img/photos/animals/fly2.JPG" target="_blank"><img src="../img/photos/animals/fly2.jpeg" alt="bird flying"></a></li>
+            <li class="one_third"><a href="../img/photos/animals/fly3.jpeg" target="_blank"><img src="../img/photos/animals/fly3.jpeg" alt="bird flying"></a></li>
+            <li class="one_third first"><a href="../img/photos/animals/fly4.jpg" target="_blank"><img src="../img/photos/animals/fly4.jpg" alt="bird flying"></a></li>
+            <li class="one_third"><a href="../img/photos/animals/fly5.jpg" target="_blank"><img src="../img/photos/animals/fly5.jpg" alt="bird flying"></a></li>
+            <li class="one_third"><a href="../img/photos/animals/fly6.jpeg" target="_blank"><img src="../img/photos/animals/fly6.jpeg" alt="bird flying"></a></li>
+            <li class="one_half first"><a href="../img/photos/animals/goose2.JPG" target="_blank"><img src="../img/photos/animals/goose2.JPG" alt="goose"></a></li>
+            <li class="one_half"><a href="../img/photos/animals/goose3.JPG" target="_blank"><img src="../img/photos/animals/goose3.JPG" alt="goose"></a></li>
+            <li class="two_third first"><a href="../img/photos/animals/goose4.JPG" target="_blank"><img src="../img/photos/animals/goose4.JPG" alt="goose"></a></li>
+            <li class="one_third"><a href="../img/photos/animals/goose5.JPG" target="_blank"><img src="../img/photos/animals/goose5.JPG" alt="goose"></a></li>
+            <li class="one_half first"><a href="../img/photos/animals/greenduck.JPG" target="_blank"><img src="../img/photos/animals/greenduck.JPG" alt="green duck"></a></li>
+            <li class="one_half"><a href="../img/photos/animals/turtle.JPG" target="_blank"><img src="../img/photos/animals/turtle.JPG" alt="turtle"></a></li>
+            <li class="one_third first"><a href="../img/photos/animals/water1.jpg" target="_blank"><img src="../img/photos/animals/water1.jpg" alt="goose in water"></a></li>
+            <li class="one_third"><a href="../img/photos/animals/water2.jpg" target="_blank"><img src="../img/photos/animals/water2.jpg" alt="goose in water"></a></li>
+            <li class="one_third"><a href="../img/photos/animals/water3.jpg" target="_blank"><img src="../img/photos/animals/water3.jpg" alt="goose in water"></a></li>
+            <li class="one_half first"><a href="../img/photos/animals/noswim.JPG" target="_blank"><img src="../img/photos/animals/noswim.JPG" alt="no swim sign"></a></li>
+            <li class="one_half"><a href="../img/photos/animals/noswim2.JPG" target="_blank"><img src="../img/photos/animals/noswim2.JPG" alt="no swim sign"></a></li>
+            <li class="four_quarter first"><a href="../img/photos/animals/orangebird.JPG" target="_blank"><img src="../img/photos/animals/orangebird.JPG" alt=" orange bird"></a></li>
+          </ul>
+
+          <button onclick="topFunction()"class="btn" id="myBtn" title="Go to top">Top</button>
+
+          <figcaption>The Northeast's Natural Beauty: A Photographic Journey<br>
+
+Explore the beauty of rural areas in the Northeast through our collection of nature and landscape photos. From wildflowers to sunsets, each photo captures the unique textures, patterns, and colors of this region. Take a journey through the Northeast's natural landscapes and discover the wonder and magic of the great outdoors.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="bgded overlay" style="background-position: bottom center; background-image:url('../img/photos/animals/bird2.JPG');">
+  <footer id="footer" class="hoc clear center"> 
+    <h3 class="heading uppercase">Peter Zito</h3>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="social-icons">
+  <a href="https://www.linkedin.com/in/peter-zito/" target="blank" class="icon"><i class="fa fa-linkedin"></i></a>
+  <a href="https://sites.google.com/view/peterzitoportfolio/home" target="blank" class="icon"><i class="fa fa-google"></i></a>
+
+  </footer>
+  <div id="copyright" class="hoc clear center"> 
+    <p>Copyright &copy; 2024 <a href="#"></a></p>
+  </div>
+</div>
+<!-- ################################################################################################ -->
+</body>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<script>
+const d = new Date();
+let year = d.getFullYear();
+document.getElementById("copyright").innerHTML = "Copyright &copy;" + year;
+</script>
+
+</html>
+
+

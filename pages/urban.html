@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pete Zito | Gallery | Urban</title>
+<link href="../style4.css" rel="stylesheet" type="text/css" media="all">
+<style>
+#myBtn {
+   margin: 0 0% 2% 47%;
+   text-align: center;
+}
+</style>
+
+</head>
+<body id="top">
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay" style="background-image:url('../img/photos/urban/church.JPEG');"> 
+  <div class="wrapper">
+    <header id="header" class="hoc clear">
+      <div id="logo"> 
+        <h1><a href="../index.html">Exploring the Cityscape Through Photography</a></h1>
+        <p>Pete Zito</p>
+      </div>
+      <nav id="mainav" class="clear">
+        <ul class="clear">
+          <li><a href="../index.html">Home</a></li>
+          <li><a class="drop" href="../index.html#gallery">Gallery</a>
+            <ul>
+              <li><a href="nature.html">Nature</a></li>
+              <li><a href="animals.html">Wildlife</a></li>
+              <li><a href="urban.html">Urban</a></li>
+              <li><a href="professional.html">Professional</a></li>
+            </ul>
+          </li>
+          <li><a class="drop" href="videos.html">Videos</a>
+            <ul>
+              <li><a href="videos.html#2023">2023 Videos</a></li>
+              <li><a href="videos.html#2022">2022 Videos</a></li>
+              <li><a href="videos.html#2021">2021 Videos</a></li>
+              <li><a href="videos.html#promotional">Promotional</a></li>
+              <li><a href="videos.html#quarter">Quarterly Video</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <!--  ########################################################################################################## -->
+<!-- resized dropdown navbar dynamic thx chatgpt -->
+        <form id="navForm" action="#">
+  <select>
+    <option selected="selected" value="">MENU</option>
+  </select>
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $("#mainav a").each(function() {
+      var link = $(this);
+      var optionText = "";
+
+      if (link.parents("ul ul ul").length >= 1) {
+        optionText = "- - - " + link.text();
+      } else if (link.parents("ul ul").length >= 1) {
+        optionText = "- - " + link.text();
+      } else if (link.parents("ul").length >= 1) {
+        optionText = "" + link.text();
+      }
+
+      $("<option />", {
+        value: link.attr("href"),
+        text: optionText
+      }).appendTo("#navForm select");
+    });
+
+    $("#navForm select").change(function() {
+      var selectedOption = $(this).find("option:selected");
+      if (selectedOption.val() !== "#") {
+        window.location = selectedOption.val();
+      }
+    });
+  });
+</script>
+      </nav>
+    </header>
+  </div>
+</div>
+<!-- End Top Background Image Wrapper -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <div class="content"> 
+      <div id="gallery">
+        <figure>
+          <header class="heading">Cityscape</header>
+          <ul class="nospace clear">
+            <li class="two_third first"><a href="../img/photos/urban/street.jpg" target="_blank"><img src="../img/photos/urban/street.jpg" alt="street"></a></li>
+            <li class="one_third"><a href="../img/photos/urban/street.JPEG" target="_blank"><img src="../img/photos/urban/street.JPEG" alt="street"></a></li>
+            <li class="one_third first"><a href="../img/photos/urban/wall.JPEG" target="_blank"><img src="../img/photos/urban/wall.JPEG" alt="wall"></a></li>
+            <li class="one_third"><a href="../img/photos/urban/sand.JPEG" target="_blank"><img src="../img/photos/urban/sand.JPEG" alt="sand"></a></li>
+            <li class="one_third"><a href="../img/photos/urban/night.JPEG" target="_blank"><img src="../img/photos/urban/night.JPEG" alt="night"></a></li>
+            <li class="one_half first"><a href="../img/photos/urban/shed.JPEG" target="_blank"><img src="../img/photos/urban/shed.JPEG" alt="shed"></a></li>
+            <li class="one_half"><a href="../img/photos/urban/glass.JPG" target="_blank"><img src="../img/photos/urban/glass.JPG" alt="glass"></a></li>
+            <li class="two_third first"><a href="../img/photos/urban/safeway.JPEG" target="_blank"><img src="../img/photos/urban/safeway.JPEG" alt="safeway"></a></li>
+            <li class="one_third"><a href="../img/photos/urban/parkingLot.JPEG" target="_blank"><img src="../img/photos/urban/parkingLot.JPEG" alt="parkinglot"></a></li>
+            <li class="four_quarter first"><a href="../img/photos/urban/church.JPEG" target="_blank"><img src="../img/photos/urban/church.JPEG" alt="church"></a></li>
+            <li class="one_third first"><a href="../img/photos/urban/muscleMan.JPEG" target="_blank"><img src="../img/photos/urban/muscleMan.JPEG" alt="guy"></a></li>
+            <li class="one_third"><a href="../img/photos/urban/italy.JPEG" target="_blank"><img src="../img/photos/urban/italy.JPEG" alt="italy"></a></li>
+            <li class="one_third"><a href="../img/photos/urban/friar2.jpg" target="_blank"><img src="../img/photos/urban/friar2.jpg" alt="friar statue"></a></li>
+            <li class="two_third first"><a href="../img/photos/urban/friar2.jpg" target="_blank"><img src="../img/photos/urban/friar2.jpg" alt="friar statue"></a></li>
+            <li class="one_third"><a href="../img/photos/urban/candleBridge.JPG" target="_blank"><img src="../img/photos/urban/candleBridge.JPG" alt="candle on bridge"></a></li>
+            <li class="two_third first"><a href="../img/photos/urban/bigO.jpg" target="_blank"><img src="../img/photos/urban/bigO.jpg" alt="statue"></a></li>
+            <li class="one_third"><a href="../img/photos/urban/1candle.jpg" target="_blank"><img src="../img/photos/urban/1candle.jpg" alt="candles"></a></li>
+            <li class="one_half first"><a href="../img/photos/urban/church2.JPEG" target="_blank"><img src="../img/photos/urban/church2.JPEG" alt="church"></a></li>
+            <li class="one_half"><a href="../img/photos/urban/buildings.JPEG" target="_blank"><img src="../img/photos/urban/buildings.JPEG" alt="buildings"></a></li>
+            <li class="one_third first"><a href="../img/photos/urban/bridge.JPG" target="_blank"><img src="../img/photos/urban/bridge.JPG" alt="bridge"></a></li>
+            <li class="one_third"><a href="../img/photos/urban/candle1.jpg" target="_blank"><img src="../img/photos/urban/candle1.jpg" alt="candles"></a></li>
+            <li class="one_third"><a href="../img/photos/urban/candle2.jpg" target="_blank"><img src="../img/photos/urban/candle2.jpg" alt="candles"></a></li>
+            <li class="two_third first"><a href="../img/photos/urban/carWash.JPG" target="_blank"><img src="../img/photos/urban/carWash.JPG" alt="car wash"></a></li>
+            <li class="one_third"><a href="../img/photos/urban/climb.jpg" target="_blank"><img src="../img/photos/urban/climb.jpg" alt="guy on sidwalk"></a></li>
+            <li class="one_third first"><a href="../img/photos/urban/bridgeman.jpg" target="_blank"><img src="../img/photos/urban/bridgeman.jpg" alt="guy on bridge"></a></li>
+            <li class="two_third"><a href="../img/photos/urban/drug.jpg" target="_blank"><img src="../img/photos/urban/drug.jpg" alt="drug sign"></a></li>
+          </ul>
+
+        <button onclick="topFunction()"class="btn" id="myBtn" title="Go to top">Top</button>
+
+        <figcaption>Exploring Urban Design: Architecture, Parking Lots, Statues, and Structures<br>
+           Experience the essence of urban living as we journey through architecture, parking lots, statues, and structures. Delve into the intricate details of towering skyscrapers and historic buildings. Navigate bustling parking lots and encounter majestic statues, each adding character to public spaces. Witness the bold forms of urban structures, showcasing human ingenuity. Join us on this exploration of urban design, where every element tells a unique story of city life.
+
+        </figcaption>
+        </figure>
+
+      </div>
+    </div>
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="bgded overlay" style="background-position: bottom center; background-image:url('../img/photos/urban/church.JPEG');">
+  <footer id="footer" class="hoc clear center"> 
+    <h3 class="heading uppercase">Peter Zito</h3>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="social-icons">
+  <a href="https://www.linkedin.com/in/peter-zito/" target="blank" class="icon"><i class="fa fa-linkedin"></i></a>
+  <a href="https://sites.google.com/view/peterzitoportfolio/home" target="blank" class="icon"><i class="fa fa-google"></i></a>
+
+  </footer>
+  <div id="copyright" class="hoc clear center"> 
+    <p>Copyright &copy; 2024 <a href="#"></a></p>
+  </div>
+</div>
+<!-- ################################################################################################ -->
+</body>
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<script>
+const d = new Date();
+let year = d.getFullYear();
+document.getElementById("copyright").innerHTML = "Copyright &copy;" + year;
+</script>
+
+</html>
+

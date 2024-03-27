@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pete Zito | Videos</title>
+<link href="../style4.css" rel="stylesheet" type="text/css" media="all">
+<style>
+#myBtn {
+   margin: 0 0% 2% 47%;
+   text-align: center;
+}
+</style>
+
+</head>
+<body id="top">
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay" style=" background-position: center; background-image:url('../img/photos/nature/beachmont.JPEG');"> 
+  <div class="wrapper">
+    <header id="header" class="hoc clear">
+      <div id="logo"> 
+        <h1><a href="../index.html">Professional Video Highlights</a></h1>
+        <p>Pete Zito</p>
+      </div>
+      <nav id="mainav" class="clear">
+        <ul class="clear">
+          <li><a href="../index.html">Home</a></li>
+          <li><a class="drop" href="../index.html#gallery">Gallery</a>
+            <ul>
+              <li><a href="nature.html">Nature</a></li>
+              <li><a href="animals.html">Wildlife</a></li>
+              <li><a href="urban.html">Urban</a></li>
+              <li><a href="professional.html">Professional</a></li>
+            </ul>
+          </li>
+          <li><a class="drop" href="videos.html">Videos</a>
+            <ul>
+              <li><a href="#2023">2023 Videos</a></li>
+              <li><a href="#2022">2022 Videos</a></li>
+              <li><a href="#2021">2021 Videos</a></li>
+              <li><a href="#promotional">Promotional</a></li>
+              <li><a href="#quarter">Quarterly Video</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <!--  ########################################################################################################## -->
+<!-- resized dropdown navbar dynamic thx chatgpt -->
+        <form id="navForm" action="#">
+  <select>
+    <option selected="selected" value="">MENU</option>
+  </select>
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $("#mainav a").each(function() {
+      var link = $(this);
+      var optionText = "";
+
+      if (link.parents("ul ul ul").length >= 1) {
+        optionText = "- - - " + link.text();
+      } else if (link.parents("ul ul").length >= 1) {
+        optionText = "- - " + link.text();
+      } else if (link.parents("ul").length >= 1) {
+        optionText = "" + link.text();
+      }
+
+      $("<option />", {
+        value: link.attr("href"),
+        text: optionText
+      }).appendTo("#navForm select");
+    });
+
+    $("#navForm select").change(function() {
+      var selectedOption = $(this).find("option:selected");
+      if (selectedOption.val() !== "#") {
+        window.location = selectedOption.val();
+      }
+    });
+  });
+</script>
+      </nav>
+    </header>
+  </div>
+</div>
+<!-- End Top Background Image Wrapper -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <div class="content"> 
+      <div id="gallery">
+        <figure>
+          <header class="heading" id="2023">2023 Beachmont Day Camp Session</header>
+          <ul class="nospace clear">
+            <iframe width="560" height="315"  class="four_quarter first" src="https://www.youtube.com/embed/videoseries?si=bMooloLfHEgjQflf&amp;list=PLVrxtkmU0tZVSlXw9EfhYGcCjHxduFwjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+           <header class="heading" id="2022">2022 Beachmont Day Camp Session</header>
+            <iframe class="four_quarter first" width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=qbjHnuq7YM10B3EN&amp;list=PLVrxtkmU0tZUDOTlS285davZdeV7ucIyY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+           <header class="heading" id="2021">2021 Beachmont Day Camp Session</header>
+            <iframe class="four_quarter first" width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=AxndrdqosRKX5mNk&amp;list=PLVrxtkmU0tZX0FeJqA5hLyrmJPW_rp_lS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+           <header class="heading" id="promotional">Beachmont Childcare Promotional</header>
+            <iframe class="four_quarter first" width="560" height="315" src="https://www.youtube.com/embed/HSFhhO9PQsQ?si=RwIbN0xDhs4d3LsW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+           <header class="heading" id="quarter">Beachmont Quarterly Video</header>
+            <iframe class="four_quarter first" width="560" height="315" src="https://www.youtube.com/embed/XUcAo6xZ4nE?si=1eOaUOTxl9xMaWgI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+          </ul>
+
+        <button onclick="topFunction()"class="btn" id="myBtn" title="Go to top">Top</button>
+
+        <figcaption>Video Storytelling Success: Elevating Camp Experiences and Childcare Centers<br>
+           Throughout my tenure, I've taken pride in my role as the videographer and editor for Beachmont Children's Day Camp. Consistently, I've curated engaging weekly videos, capturing the essence of our camp's vibrant activities and cherished moments. Additionally, I've spearheaded the production of quarterly videos, showcasing the evolving narrative of our camp's journey. Beyond Beachmont, I've been entrusted with the creation of a promotional video for a newly established childcare center, elevating its brand presence and essence in the community. Through these endeavors, I've honed my skills in storytelling, cinematography, and editing, fostering a lasting impact on our audience and stakeholders alike.
+
+        </figcaption>
+        </figure>
+
+      </div>
+    </div>
+    <!-- / main body -->
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="bgded overlay" style="background-position: bottom center; background-image:url('../img/photos/nature/beachmont.JPEG');">
+  <footer id="footer" class="hoc clear center"> 
+    <h3 class="heading uppercase">Peter Zito</h3>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="social-icons">
+  <a href="https://www.linkedin.com/in/peter-zito/" target="blank" class="icon"><i class="fa fa-linkedin"></i></a>
+  <a href="https://sites.google.com/view/peterzitoportfolio/home" target="blank" class="icon"><i class="fa fa-google"></i></a>
+
+  </footer>
+  <div id="copyright" class="hoc clear center"> 
+    Copyright &copy; 2024 <a href="#"></a></p>
+  </div>
+</div>
+<!-- ################################################################################################ -->
+</body>
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<script>
+const d = new Date();
+let year = d.getFullYear();
+document.getElementById("copyright").innerHTML = "Copyright &copy;" + year;
+</script>
+
+</html>
